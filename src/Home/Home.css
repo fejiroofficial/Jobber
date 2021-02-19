@@ -1,0 +1,190 @@
+.home {
+  height: 100vh;
+  width: 100%;
+}
+
+.main-content {
+  display: grid;
+}
+
+.main-header {
+  font-size: 50px;
+}
+
+.search-input {
+  grid-column: 1/2;
+  height: 72px;
+  width: 40em !important;
+}
+
+.input-btn {
+  height: 54px !important;
+  width: 181px;
+}
+
+.job-list-item {
+  display: flex !important;
+  position: relative;
+  width: 640px;
+  height: 92px;
+  border: 1px solid #c4c4c4;
+  border-radius: 2px;
+  padding: 8px;
+  cursor: pointer;
+  margin-bottom: 1em;
+}
+
+.card-body {
+  margin-left: 10px;
+}
+
+.card-body-title {
+  font-size: 18px;
+}
+
+.card-body-content {
+  font-size: 14px;
+  color: #7e7e7e;
+}
+
+.job-list-salary {
+  position: absolute;
+  right: 1em;
+  top: 0.7em;
+}
+
+.results-display {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  margin: 5em 0 1em 0;
+}
+
+.job-listing {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.filter {
+  grid-column: 2/5;
+  grid-row: 1/5;
+  text-align: initial;
+  width: 16em;
+}
+
+.filter-header {
+  font-size: 18px;
+  color: #000000;
+}
+
+.filter-title {
+  font-size: 25px;
+  color: #505050;
+}
+
+span.hr-rule {
+  width: 164px;
+  border: none;
+  height: 1px;
+  background: #c4c4c4;
+  margin: 25px 0 25px 0;
+}
+
+span.hr-title {
+  margin: 15px 0 29px 0;
+}
+
+.filter-content {
+  display: grid;
+  justify-content: start;
+}
+
+.filter-input {
+  width: 179px !important;
+  height: 40px;
+  border: 1px solid #c4c4c4;
+}
+
+.ant-collapse {
+  height: fit-content;
+}
+
+@media (max-width: 1024px) {
+  .filter {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: initial;
+    width: 60vw !important;
+  }
+  .results-display {
+    grid-column: 1/2;
+    grid-row: 3/4;
+    margin: 5em 0 1em 0;
+  }
+  .job-listing {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  .job-list-item {
+    width: 60vw;
+  }
+  span.hr-rule {
+    width: 57vw;
+  }
+  .search-input {
+    margin-bottom: 1em;
+  }
+  .ant-collapse {
+    width: 45em;
+  }
+  .search-input {
+    grid-column: 1/2;
+    height: 72px;
+    width: 60vw !important;
+  }
+  .main-header {
+    font-size: 5vw;
+  }
+  .input-btn {
+    height: 54px !important;
+    width: 15vw;
+  }
+}
+
+@media (max-width: 767px) {
+  .search-input {
+    width: auto !important;
+  }
+  .job-list-item {
+    width: auto;
+  }
+  .filter {
+    width: auto !important;
+  }
+}
+
+@media (max-width: 550px) {
+  .search-input {
+    width: auto !important;
+    height: 3em;
+  }
+  .input-btn {
+    height: 35px !important;
+    width: 6em;
+  }
+  .job-list-item {
+    height: 108px;
+  }
+  .job-list-salary {
+    position: static;
+  }
+}
+
+@media (max-width: 360px) {
+  .card-body-title, .job-list-salary {
+    font-size: 4vw;
+  }
+  .card-body-content {
+    font-size: 3vw;
+  }
+}
